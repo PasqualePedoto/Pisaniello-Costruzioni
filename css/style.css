@@ -1,0 +1,62 @@
+/* GENERICS */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 100px;
+
+    position: relative;
+}
+
+/* # HEADER */
+
+header {
+    height: 100px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#my-navbar {
+    /* 
+    Bootstrap usa, in questa navbar
+    justify-content: space-between;
+    io lo cambio così sovrascrivendolo
+    col mio foglio di stile 
+    */
+    /* justify-content: center; */
+}
+
+/* 
+$ STILIZZIAMO L'HOVER DEI LINK NELL'HEADER 
+*/
+
+/*
+Lo mettiamo già trasparente per evitare
+brutti effetti in hover 
+*/
+header .navbar-collapse li {
+    border-bottom: 1px solid transparent;
+    margin-right: 0.5rem;
+}
+
+header .navbar-collapse li:hover {
+    border-bottom: 1px solid black;
+}
+
+/* # CAROSELLO */
+
+/*
+Forniamo una dimensione fissa al carosello
+e poi la facciamo ereditare con la classe BS
+h-100 che fa ereditare l'altezza del padre
+*/
+.carousel-inner {
+    height: 700px;
+}
